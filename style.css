@@ -1,94 +1,105 @@
-/* Réinitialisation des marges et des paddings */
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
-/* Style général du CV */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
-    background-image: url('Images/image-removebg-preview (4).png');
-    background-repeat: no-repeat;
+    
 }
-
-/* Style du cadre rectangulaire autour des sections */
-section {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-/* Style de l'entête */
-header {
-    background-image: url('C:\Users\amidou.kone\desktop\projetCV\Images\arriere_plan.jpg');
-    background-size: cover;
+.resume_name_info
+{
+    background: url('../projetCV/Images/image-removebg-preview.png') center/100% 100% no-repeat;
+    border: 1px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    height: 281px;
+    color: white
 }
-
-/* Style des informations dans le header */
-.header-info {
-    text-align: right;
-    color: white;
+.name
+{
+    margin-top: -50px;
+    text-align: center;
 }
-
-.header-info h1 {
-    font-size: 24px;
+.resume_wrapper{
+    min-height: 100vh;
+    width: 80%;
+    margin: 4rem auto;
 }
-
-.profession {
-    font-style: italic;
-}
-
-.contact {
-    font-size: 14px;
-}
-
-/* Style des sections du CV */
-section {
-    margin-top: 20px;
-}
-
-section h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Style des éléments de parcours et d'expérience */
-.parcours-item,
-.experience-item {
+.ctact 
+{
     display: flex;
+    margin-top: 30px;
+    flex-flow: row wrap;
+    
+}
+
+.data_ctact{display: flex;}
+.data_ctact img{margin-right: 8pxgit;}
+.side_ctact{margin-right: 15px;}
+.side_ctact h3{line-height: 1.5em;}
+.profil h2 {
+    padding: 5px;
+    border: 2px solid black;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-left: 50px;
+    
+}
+
+.parcours h2 {
+    padding: 5px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+.t1_title {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.t1_title_2 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.competences {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
     margin-bottom: 10px;
 }
-
-.parcours-item p,
-.experience-item p {
-    margin-right: 10px;
-}
-
-.parcours-description,
-.experience-description {
-    flex-grow: 1;
-}
-
-/* Style des barres de compétence */
-.competence {
-    margin-bottom: 10px;
-}
-
-.barre-degres {
-    height: 10px;
+.progres
+{
+    width: 100px;
     background-color: violet;
     border-radius: 5px;
-    border: 1px solid violet; /* Ajout d'une bordure solide */
+    height: 100%;
+}
+.progres_1{ width: 140px;}
+.progres_2{ width: 75px;}
+.progres_3{ width: 50px;}
+.progres_4{ width: 130px;}
+.progres_5{ width: 90px;}
+.barre-degres 
+{
+    height: 10px;
+    background-color: rgb(207, 205, 205);
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(207, 205, 205); /* Ajout d'une bordure solide */
+    width: 150px;
 }
 
 /* Style des intérêts */
@@ -101,7 +112,7 @@ section h1 {
 .interet {
     display: flex;
     align-items: center;
-    background-color: violet;
+    /* background-color: violet; */
     padding: 5px;
     border-radius: 5px;
 }
@@ -111,3 +122,12 @@ section h1 {
     height: 24px;
     margin-right: 5px;
 }
+.interets
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+

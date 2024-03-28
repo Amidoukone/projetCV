@@ -1,3 +1,5 @@
+
+/* initialisation des paramètre par defaut */
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +7,7 @@
     list-style: none;
 }
 
-body {
-    
-}
+/* Style pour l'entête */
 .resume_name_info
 {
     background: url('../projetCV/Images/image-removebg-preview.png') center/100% 100% no-repeat;
@@ -36,6 +36,7 @@ body {
     
 }
 
+/* Gestion de la dispositon des contenus de l'entête */
 .data_ctact{display: flex;}
 .data_ctact img{margin-right: 8pxgit;}
 .side_ctact{margin-right: 15px;}
@@ -48,6 +49,7 @@ body {
     text-align: center;
 }
 
+/* Gestion de la dispositon des contenus des sections */
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -83,7 +85,7 @@ body {
 .progres
 {
     width: 100px;
-    background-color: violet;
+    background-color: #583EFF;
     border-radius: 5px;
     height: 100%;
 }
@@ -128,6 +130,53 @@ body {
     flex-flow: row wrap;
 }
 
+.left_t1_content {
+    padding: 0px 30px;
+    border-left: 2px solid #583EFF;
+    position: relative;
+}
 
+/* Création du trait vertical */
+.right_t1_content {
+    padding: 0px 30px;
+    border-left: 2px solid #583EFF;
+    position: relative;
+}
+
+/* Création des points qui sont sur les traits verticaux*/
+.left_t1_content::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    transform: translate(-50%);
+    top: 0%;
+    left: 0;
+}
+
+.right_t1_content::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    transform: translate(-50%);
+    top: 0%;
+    left: 0;
+}
+
+/* Media queries pour rendre le site responsive */
+@media screen and (max-width: 768px) {
+    .resume_wrapper {
+        width: 90%;
+    }
+
+    .timeline {
+        margin-left: 0;
+    }
+}
 
 

@@ -1,5 +1,4 @@
-name: Deployer sur GitHub Pages
-
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
@@ -12,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Deployer sur GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}

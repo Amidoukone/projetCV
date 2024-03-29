@@ -11,7 +11,7 @@
 .resume_name_info
 {
     background: url('../projetCV/Images/image-removebg-preview.png') center/100% 100% no-repeat;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -94,6 +94,7 @@
 .progres_3{ width: 50px;}
 .progres_4{ width: 130px;}
 .progres_5{ width: 90px;}
+
 .barre-degres 
 {
     height: 10px;

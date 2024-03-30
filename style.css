@@ -1,10 +1,22 @@
-
 /* initialisation des paramètre par defaut */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+}
+
+/* Définition des variables */
+:root {
+  --couleur-principale: #3498db;
+  --couleur-secondaire: #583EFF;
+  --couleur-texte: white;
+  --taille-police: 16px;
+  --hauteur-entete: 281px;
+  --marge-entete: -50px;
+  --largeur-contenu: 80%;
+  --marge-contenu: 4rem auto;
+  --espace-interet: 20px;
 }
 
 /* Style pour l'entête */
@@ -15,30 +27,29 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 281px;
-    color: white
+    height: var(--hauteur-entete);
+    color: var(--couleur-texte);
 }
 .name
 {
-    margin-top: -50px;
+    margin-top: var(--marge-entete);
     text-align: center;
 }
 .resume_wrapper{
     min-height: 100vh;
-    width: 80%;
-    margin: 4rem auto;
+    width: var(--largeur-contenu);
+    margin: var(--marge-contenu);
 }
 .ctact 
 {
     display: flex;
     margin-top: 30px;
     flex-flow: row wrap;
-    
 }
 
 /* Gestion de la dispositon des contenus de l'entête */
 .data_ctact{display: flex;}
-.data_ctact img{margin-right: 8pxgit;}
+.data_ctact img{margin-right: 8px;}
 .side_ctact{margin-right: 15px;}
 .side_ctact h3{line-height: 1.5em;}
 .profil h2 {
@@ -55,7 +66,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-left: 50px;
-    
 }
 
 .parcours h2 {
@@ -85,7 +95,7 @@
 .progres
 {
     width: 100px;
-    background-color: #583EFF;
+    background-color: var(--couleur-secondaire);
     border-radius: 5px;
     height: 100%;
 }
@@ -109,7 +119,7 @@
 .interets {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: var(--espace-interet);
 }
 
 .interet {
@@ -133,14 +143,14 @@
 
 .left_t1_content {
     padding: 0px 30px;
-    border-left: 2px solid #583EFF;
+    border-left: 2px solid var(--couleur-secondaire);
     position: relative;
 }
 
 /* Création du trait vertical */
 .right_t1_content {
     padding: 0px 30px;
-    border-left: 2px solid #583EFF;
+    border-left: 2px solid var(--couleur-secondaire);
     position: relative;
 }
 
@@ -150,7 +160,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur-secondaire);
     border-radius: 50%;
     transform: translate(-50%);
     top: 0%;
@@ -162,7 +172,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur-secondaire);
     border-radius: 50%;
     transform: translate(-50%);
     top: 0%;
@@ -179,5 +189,3 @@
         margin-left: 0;
     }
 }
-
-

@@ -13,5 +13,5 @@ jobs:
 
     steps:
     - name: installation 
-      run: echo 'install dependecies'
+      run: echo 'install dependencies'
     

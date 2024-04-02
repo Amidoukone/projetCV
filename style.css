@@ -75,6 +75,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    text-decoration: var(--couleur-texte);
+    background-color: rgb(16, 27, 145);
 } 
 
 .t1_title {

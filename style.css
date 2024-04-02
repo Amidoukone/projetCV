@@ -4,12 +4,14 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+
+    /* rgb(16, 27, 145) */
 }
 
 /* Définition des variables */
 :root {
-  --couleur-principale: #db9334;
-  --couleur-secondaire: #cfff3e;
+  --couleur-principale: rgb(16, 27, 145);
+  --couleur-secondaire: #473b81;
   --couleur-texte: white;
   --taille-police: 16px;
   --hauteur-entete: 281px;
@@ -22,8 +24,9 @@
 /* Style pour l'entête */
 .resume_name_info
 {
-    background: url('../projetCV/Images/image-removebg-preview.png') center/100% 100% no-repeat;
-    /* border: 1px solid black; */
+    /* background: url('../projetCV/Images/image-removebg-preview.png') center/100% 100% no-repeat; */
+    background-color: var(--couleur-principale);
+    border: 5px inset black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -59,7 +62,8 @@
     margin-bottom: 20px;
     text-align: center;
     color: var(--couleur-texte);
-    background-color: rgb(16, 27, 145);
+    background-color: var(--couleur-principale);
+    border-radius: 25px;
 }
 
 /* Gestion de la dispositon des contenus des sections */
@@ -77,7 +81,8 @@
     margin-bottom: 20px;
     text-align: center;
     color: var(--couleur-texte);
-    background-color: rgb(16, 27, 145);
+    background-color: var(--couleur-principale);
+    border-radius: 25px;
 } 
 
 .t1_title {

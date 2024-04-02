@@ -32,7 +32,12 @@
     align-items: center;
     height: var(--hauteur-entete);
     color: var(--couleur-texte);
+    /* border-radius: 100% / -50%; */
+    /* clip-path: ellipse(10% 60% at 10% 50%); */
+    background: linear-gradient(to top left, transparent 30%, rgb(16, 27, 145) 2%);
 }
+
+
 .name
 {
     margin-top: var(--marge-entete);

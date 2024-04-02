@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo 'install dependecies'
     - name: installation 
+      run: echo 'install dependecies'
+   
      

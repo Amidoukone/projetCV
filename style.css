@@ -58,7 +58,8 @@
     margin-top: 80px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: rgb(170, 12, 101);
+    color: var(--couleur-texte);
+    background-color: rgb(16, 27, 145);
 }
 
 /* Gestion de la dispositon des contenus des sections */
@@ -75,7 +76,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    text-decoration: var(--couleur-texte);
+    color: var(--couleur-texte);
     background-color: rgb(16, 27, 145);
 } 
 
